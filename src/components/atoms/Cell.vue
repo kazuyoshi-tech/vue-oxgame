@@ -1,5 +1,5 @@
 <template>
-    <div :class="['cell', isDisable ? 'cell--disabled' : '']" @click="toggleCell(index)">
+    <div :class="['cell', isDisabled ? 'cell--disabled' : '']" @click="toggleCell(index)">
         <transition name="bounce">
             <span v-if="position" :class="['cell--toggle', activeToggleClass]">{{ position }}</span>
         </transition>
@@ -41,7 +41,7 @@ export default {
             'getMarker'
         ]),
 
-        isDisable() {
+        isDisabled() {
             return this.position || this.winner || this.replay;
         },
 
