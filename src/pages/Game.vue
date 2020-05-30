@@ -35,15 +35,17 @@ import {
   mapState,
   mapGetters,
 } from 'vuex';
-// import Title from '@atoms/Title';
-// import Footer from '@atoms/Footer';
-// import Cells from '@molecules/Cells';
+
+import Title from '../components/atoms/Title.vue';
+import Footer from '../components/atoms/Footer.vue';
+import Cells from '../components/molecules/Cells.vue';
+
 export default {
   name: 'Game',
   components: {
-    // Cells,
-    // Footer,
-    // Title
+    Cells,
+    Footer,
+    Title
   },
   computed: {
     ...mapState([
