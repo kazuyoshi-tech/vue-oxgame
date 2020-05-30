@@ -80,3 +80,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.flex--v-centered {
+  margin: 0 auto;
+}
+</style>
