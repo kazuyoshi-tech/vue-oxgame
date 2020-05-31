@@ -23,7 +23,7 @@
         </div>
         <Replay v-if="selectedGame && replayActive"
             :game="selectedGame"
-            :active="replayActice"
+            :active="replayActive"
             @clone-replay="replayActive = false"
         />
     </div>
