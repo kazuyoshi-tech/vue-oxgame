@@ -24,7 +24,7 @@
         <Replay v-if="selectedGame && replayActive"
             :game="selectedGame"
             :active="replayActive"
-            @clone-replay="replayActive = false"
+            @close-replay="replayActive = false"
         />
     </div>
 </template>
@@ -37,7 +37,7 @@ import {
 
 import Title from '../components/atoms/Title.vue';
 import Score from '../components/atoms/Score.vue';
-import Replay from '../components/molecules/Replay.vue'
+import Replay from '../components/molecules/Replay.vue';
 
 export default {
     name: 'GameHistory',
@@ -89,7 +89,7 @@ export default {
     },
 
     beroreCreate() {
-        document.title = 'Game history   2525';
+        document.title = 'Game history';
         console.log(document.title)
     },
 

@@ -41,7 +41,7 @@ export default {
         methods: {
             _keyPressListener(e) {
                 if (e.keyCode === 27) {
-                    this.$emit('clone-replay');
+                    this.$emit('close-replay');
                 }
             }
         },
